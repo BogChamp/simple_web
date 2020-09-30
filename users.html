@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Active Users
+{% endblock %}
+
+{% block body %}
+    <h1 align="center">Here's our buddys!</h1>
+
+    {% for el in results %}
+    <div class="alert alert-info">
+        <h2>{{ el.id }}</h2>
+        <p>{{ el.login }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}

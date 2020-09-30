@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Logged persons
+{% endblock %}
+
+{% block body %}
+    <h1 align="center">Maybe this persons?</h1>
+    {% for el in results %}
+    <div align = "center">
+        <p>{{ el.id }}. {{ el.login }}  </p>
+    </div>
+    {% endfor %}
+{% endblock %}

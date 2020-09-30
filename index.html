@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Main Page
+{% endblock %}
+
+{% block body %}
+<h1 align="center">Hello, stranger!</h1>
+
+<div align="center">
+    <p>If you want find someone by login, welcome here!</p>
+    <a href="/logins"> http://127.0.0.1:5000/logins</a>
+</div>
+
+<div align="center">
+    <p>If you want find someone by id, welcome here!</p>
+    <a href="/id"> http://127.0.0.1:5000/id</a>
+</div>
+
+<div align="center">
+    <p>If you want find someone by login, using query string, you need this.</p>
+    <a href="/by-login?login=admin"> http://127.0.0.1:5000/by-login?login=admin</a>
+</div>
+
+<div align="center">
+    <p>If you want find someone by id, using query string, you need this.</p>
+    <a href="/by-id?id=1Bc"> http://127.0.0.1:5000/by-id?id=1</a>
+</div>
+
+{% endblock %}
